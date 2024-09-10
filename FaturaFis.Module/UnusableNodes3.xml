@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Urunler_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Urunler">
+              <LayoutGroup Id="Urunler_col1" RelativeSize="100">
+                <LayoutItem Id="SiraNo" RelativeSize="15.178571428571429" />
+                <LayoutGroup Id="Autocca9a474-2f09-4e5f-a02f-67c85312f814" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="11.607142857142858">
+                  <LayoutItem Id="MalHizmetAdi" ViewItem="MalHizmetAdi" Index="0" RelativeSize="50" />
+                  <LayoutItem Id="MalHizmetKodu" ViewItem="MalHizmetKodu" Index="1" RelativeSize="50" />
+                </LayoutGroup>
+                <LayoutItem Id="Aciklama" RelativeSize="9.420289855072463" Index="2" Removed="True" />
+                <LayoutGroup Id="Auto3a3387bb-1cba-455d-8646-5f1a1b7bf69c" ShowCaption="False" Caption="" Index="2" RelativeSize="58.035714285714285">
+                  <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="0" RelativeSize="20" />
+                  <LayoutItem Id="Miktar" ViewItem="Miktar" Index="1" RelativeSize="20" />
+                  <LayoutItem Id="BirimFiyat" ViewItem="BirimFiyat" Index="2" RelativeSize="20" />
+                  <LayoutGroup Id="Autofd5212a1-8f47-41b3-976d-69268d783250" ShowCaption="False" Caption="" Direction="Horizontal" Index="3" RelativeSize="40">
+                    <LayoutGroup Id="Autob1404a6a-f7e8-4fef-b1a0-73b73cfe66de" ShowCaption="False" Caption="" Index="0" RelativeSize="50">
+                      <LayoutItem Id="IskontoOrani" ViewItem="IskontoOrani" Index="0" RelativeSize="50" />
+                      <LayoutItem Id="KDVOrani" ViewItem="KDVOrani" Index="1" RelativeSize="50" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autob4dff1cd-12ec-4900-b7bc-c928ec58e16b" ShowCaption="False" Caption="" Index="1" RelativeSize="50">
+                      <LayoutItem Id="IskontoTutari" ViewItem="IskontoTutari" Index="0" RelativeSize="50" />
+                      <LayoutItem Id="KDVTutari" ViewItem="KDVTutari" Index="1" RelativeSize="50" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="MalHizmetTutari" ViewItem="MalHizmetTutari" Index="3" RelativeSize="15.178571428571429" />
+                <LayoutItem Id="Miktar" RelativeSize="9.420289855072463" Index="3" Removed="True" />
+                <LayoutItem Id="BirimFiyat" RelativeSize="9.420289855072463" Index="4" Removed="True" />
+                <LayoutItem Id="MalHizmetAdi" RelativeSize="8.6092715231788084" Removed="True" />
+                <LayoutItem Id="MalHizmetKodu" RelativeSize="8.6092715231788084" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Urunler_col2" RelativeSize="50" Caption="Urunler_col2" Removed="True">
+                <LayoutItem Id="IskontoTutari" RelativeSize="17.171717171717173" Index="0" Removed="True" />
+                <LayoutItem Id="KDVTutari" RelativeSize="13.6" Index="0" Removed="True" />
+                <LayoutItem Id="MalHizmetTutari" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="KDVOrani" ViewItem="KDVOrani" Index="1" RelativeSize="11.607142857142858" Removed="True" />
+                <LayoutItem Id="IskontoOrani" RelativeSize="19.767441860465116" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Urunler_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Miktar" Width="60" />
+        <ColumnInfo Id="BirimFiyat" Width="60" />
+        <ColumnInfo Id="IskontoOrani" Width="60" />
+        <ColumnInfo Id="IskontoTutari" Width="60" />
+        <ColumnInfo Id="KDVOrani" Width="60" />
+        <ColumnInfo Id="KDVTutari" Width="60" />
+        <ColumnInfo Id="MalHizmetTutari" Width="60" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

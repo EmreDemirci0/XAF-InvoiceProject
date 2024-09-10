@@ -1,0 +1,235 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "DevExpress.ExpressApp.CodeAnalysis/24.1.4": {
+        "type": "package"
+      },
+      "FaturaFis.Module/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        }
+      },
+      "FaturaFis.Module.Win/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4",
+          "FaturaFis.Module": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win": {
+      "DevExpress.ExpressApp.CodeAnalysis/24.1.4": {
+        "type": "package"
+      },
+      "FaturaFis.Module/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        }
+      },
+      "FaturaFis.Module.Win/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4",
+          "FaturaFis.Module": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x64": {
+      "DevExpress.ExpressApp.CodeAnalysis/24.1.4": {
+        "type": "package"
+      },
+      "FaturaFis.Module/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        }
+      },
+      "FaturaFis.Module.Win/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4",
+          "FaturaFis.Module": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x86": {
+      "DevExpress.ExpressApp.CodeAnalysis/24.1.4": {
+        "type": "package"
+      },
+      "FaturaFis.Module/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.dll": {}
+        }
+      },
+      "FaturaFis.Module.Win/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": "24.1.4",
+          "FaturaFis.Module": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaturaFis.Module.Win.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevExpress.ExpressApp.CodeAnalysis/24.1.4": {
+      "sha512": "5unxGFvIE3sL7jpNbuOVt3uiagZuURmX+GLqQrSRWaJ8IskLa6XwKPjwCLwwx8SNBQsw3s0OTAVZ8VpWqj6F8w==",
+      "type": "package",
+      "path": "devexpress.expressapp.codeanalysis/24.1.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/DevExpress.ExpressApp.CodeAnalysis.v24.1.dll",
+        "devexpress.expressapp.codeanalysis.24.1.4.nupkg.sha512",
+        "devexpress.expressapp.codeanalysis.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "FaturaFis.Module/1.0.0": {
+      "type": "project",
+      "path": "../FaturaFis.Module/FaturaFis.Module.csproj",
+      "msbuildProject": "../FaturaFis.Module/FaturaFis.Module.csproj"
+    },
+    "FaturaFis.Module.Win/1.0.0": {
+      "type": "project",
+      "path": "../FaturaFis.Module.Win/FaturaFis.Module.Win.csproj",
+      "msbuildProject": "../FaturaFis.Module.Win/FaturaFis.Module.Win.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5.2": [
+      "DevExpress.ExpressApp.CodeAnalysis >= 24.1.4",
+      "FaturaFis.Module >= 1.0.0",
+      "FaturaFis.Module.Win >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Win\\FaturaFis.Win.csproj",
+      "projectName": "FaturaFis.Win",
+      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Win\\FaturaFis.Win.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Win\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net452"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net452": {
+          "projectReferences": {
+            "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Module.Win\\FaturaFis.Module.Win.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Module.Win\\FaturaFis.Module.Win.csproj"
+            },
+            "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Module\\FaturaFis.Module.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Module\\FaturaFis.Module.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net452": {
+        "dependencies": {
+          "DevExpress.ExpressApp.CodeAnalysis": {
+            "target": "Package",
+            "version": "[24.1.4, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Musteri_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors" RelativeSize="48.943089430894311" Caption="Firma Adresi" Removed="True">
+            <LayoutItem Id="Adres" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Musteri">
+              <LayoutGroup Id="Musteri_col1">
+                <LayoutItem Id="WebSitesi" ViewItem="WebSitesi" Index="4" RelativeSize="4.6181172291296626" Removed="True" />
+                <LayoutItem Id="TicaretSicilNo" ViewItem="TicaretSicilNo" />
+                <LayoutGroup Id="Autob58af90c-bf00-4bf2-8c3c-23b757d64db3">
+                  <LayoutGroup Id="Auto3059694b-123a-476a-a639-5664c50d9193">
+                    <LayoutItem Id="WebSitesi" ViewItem="WebSitesi" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

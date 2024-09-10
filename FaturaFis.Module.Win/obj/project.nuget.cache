@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n/+AluLuSmnvltVt9T7DQ6omlI+ze79829k3ZS4QxV6J/PAtITZv1rfMCXumhhjYeeuO98UCUhkLBfsxvZL6xQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\FaturaFis\\FaturaFis.Module.Win\\FaturaFis.Module.Win.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.expressapp.codeanalysis\\24.1.4\\devexpress.expressapp.codeanalysis.24.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}

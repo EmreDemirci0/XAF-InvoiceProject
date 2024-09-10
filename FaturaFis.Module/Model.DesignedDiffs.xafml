@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="FaturaFis">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="FaturaHareketleri_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="Fatura_DetailView" ImageName="EmployeeTaskList" />
+    <ListView Id="Fatura_FaturaHareketleri_ListView" ImageName="ListNumbers" />
+    <ListView Id="Fatura_ListView" ImageName="TaskList" />
+    <ListView Id="Fatura_LookupListView" ImageName="EmployeeTaskList" />
+    <DetailView Id="FaturaHareketleri_DetailView" ImageName="ListNumbers">
+      <Items>
+        <PropertyEditor Id="HamTutar" AllowEdit="False" />
+        <PropertyEditor Id="IskontoTutari" AllowEdit="False" />
+        <PropertyEditor Id="KDVtutari" AllowEdit="False" />
+        <PropertyEditor Id="Matrah" AllowEdit="False" />
+        <PropertyEditor Id="TotalTutar" AllowEdit="False" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="FaturaHareketleri" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="FaturaHareketleri_col1" RelativeSize="100" Direction="Vertical" Caption="FaturaHareketleri_col1">
+                <LayoutItem Id="Ürün" ViewItem="Ürün" Index="0" RelativeSize="7.6404494382022472" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Miktar" ViewItem="Miktar" Index="1" RelativeSize="5.8426966292134832" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="BirimFiyat" ViewItem="BirimFiyat" Index="2" RelativeSize="5.8426966292134832" IsNewNode="True" Removed="True" />
+                <LayoutGroup Id="Auto4d8e1130-4c14-489a-82ed-92144c400657" ShowCaption="False" Caption="Auto4d8e1130-4c14-489a-82ed-92144c400657(8)" Direction="Vertical" Index="3" RelativeSize="15.730337078651685" IsNewNode="True">
+                  <LayoutGroup Id="Auto47cdce44-7e09-4844-80eb-827f44446dcb" ShowCaption="False" Caption="Auto47cdce44-7e09-4844-80eb-827f44446dcb(9)" Direction="Horizontal" Index="0" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="IskontoOrani" ViewItem="IskontoOrani" Index="0" RelativeSize="49.951314508276532" IsNewNode="True" />
+                    <LayoutItem Id="IskontoTutari" ViewItem="IskontoTutari" Index="1" RelativeSize="50.048685491723468" CaptionLocation="Left" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto212b3a6f-500f-4d73-88fd-6811a1a35f78" ShowCaption="False" Caption="Auto212b3a6f-500f-4d73-88fd-6811a1a35f78(12)" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="KDVOrani" ViewItem="KDVOrani" Index="0" RelativeSize="49.951314508276532" IsNewNode="True" />
+                    <LayoutItem Id="KDVtutari" ViewItem="KDVtutari" Index="1" RelativeSize="50.048685491723468" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="KDVOrani" ViewItem="KDVOrani" Index="3" RelativeSize="4.7794117647058822" Removed="True" />
+                <LayoutItem Id="Matrah" ViewItem="Matrah" Index="4" RelativeSize="5.8426966292134832" IsNewNode="True" />
+                <LayoutItem Id="HamTutar" ViewItem="HamTutar" Index="5" RelativeSize="5.8426966292134832" IsNewNode="True" />
+                <LayoutItem Id="KDVtutari" ViewItem="KDVtutari" Index="5" RelativeSize="4.8148148148148149" Removed="True" />
+                <LayoutItem Id="TotalTutar" ViewItem="TotalTutar" CaptionLocation="Left" Index="6" RelativeSize="53.258426966292134" SizeConstraintsType="Default" MinSize="168, 34" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="FaturaHareketleri_col2" RelativeSize="50.05464480874317" Caption="FaturaHareketleri_col2" Removed="True">
+                <LayoutItem Id="IskontoTutari" Index="0" RelativeSize="6.25" Removed="True" />
+                <LayoutItem Id="Matrah" Index="0" RelativeSize="6.25" Removed="True" />
+                <LayoutItem Id="TotalTutar" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="IskontoOrani" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FaturaHareketleri_ListView" ImageName="ListNumbers">
+      <Columns>
+        <ColumnInfo Id="Fatura" Width="95" />
+        <ColumnInfo Id="Ürün" Width="97" />
+        <ColumnInfo Id="Miktar" Width="71" />
+        <ColumnInfo Id="BirimFiyat" Width="83" />
+        <ColumnInfo Id="KDVOrani" Width="65" />
+        <ColumnInfo Id="KDVtutari" Width="80" />
+        <ColumnInfo Id="IskontoOrani" Width="78" />
+        <ColumnInfo Id="IskontoTutari" Width="68" />
+        <ColumnInfo Id="Matrah" Width="62" />
+      </Columns>
+    </ListView>
+    <ListView Id="FaturaHareketleri_LookupListView" ImageName="ListNumbers" />
+    <DetailView Id="Ilceler_DetailView" ImageName="BO_Country_v92" />
+    <ListView Id="Ilceler_ListView" ImageName="BO_Country_v92" />
+    <ListView Id="Ilceler_LookupListView" ImageName="BO_Country_v92" />
+    <DetailView Id="Iller_DetailView" ImageName="BO_Country_v92" />
+    <ListView Id="Iller_Ilceler_ListView" ImageName="BO_Country_v92" />
+    <ListView Id="Iller_ListView" ImageName="BO_Country_v92" />
+    <ListView Id="Iller_LookupListView" ImageName="BO_Country_v92" />
+    <DetailView Id="Musteri_DetailView" ImageName="NewCustomer">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Musteri" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="Musteri_col1" RelativeSize="100">
+                <LayoutItem Id="MusteriAd" Index="0" RelativeSize="6.0390763765541742" />
+                <LayoutItem Id="Adres" Index="1" RelativeSize="4.6181172291296626" ViewItem="Adres" IsNewNode="True" />
+                <LayoutGroup Id="Autod80b04ca-6b12-428c-90fd-945d92f266ae" ShowCaption="False" Caption="Autod80b04ca-6b12-428c-90fd-945d92f266ae(7)" Direction="Vertical" Index="2" RelativeSize="10.8348134991119" IsNewNode="True">
+                  <LayoutGroup Id="Autoa6c98479-ae85-44f6-b5b1-a6347075c378" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="52.459016393442624" IsNewNode="True">
+                    <LayoutItem Id="Il" ViewItem="Il" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="Ilce" ViewItem="Ilce" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutItem Id="TelefonNumarasi" ViewItem="TelefonNumarasi" Index="1" RelativeSize="47.540983606557376" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autob58af90c-bf00-4bf2-8c3c-23b757d64db3" ShowCaption="False" Caption="Autob58af90c-bf00-4bf2-8c3c-23b757d64db3(8)" Direction="Vertical" Index="3" RelativeSize="78.507992895204268" IsNewNode="True">
+                  <LayoutGroup Id="Auto32f7ff3f-5d43-46c3-9988-821c597be544" ShowCaption="False" Caption="Auto32f7ff3f-5d43-46c3-9988-821c597be544(9)" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="EPosta" ViewItem="EPosta" Index="0" RelativeSize="7.2398190045248869" IsNewNode="True" />
+                    <LayoutGroup Id="Autob609a7fa-0fe5-44c6-9119-2a938092671e" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="92.76018099547511" IsNewNode="True">
+                      <LayoutItem Id="VergiKimlikNo" ViewItem="VergiKimlikNo" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="VergiDairesi" ViewItem="VergiDairesi" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="VergiDairesi" ViewItem="VergiDairesi" Index="3" RelativeSize="4.6181172291296626" Removed="True" />
+                <LayoutItem Id="VergiKimlikNo" ViewItem="VergiKimlikNo" Index="4" RelativeSize="4.6181172291296626" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Musteri_col2" RelativeSize="50" Caption="Musteri_col2" Removed="True">
+                <LayoutItem Id="EPosta" RelativeSize="76.712328767123282" Removed="True" />
+                <LayoutItem Id="TelefonNumarasi" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="TicaretSicilNo" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="20.38216560509554" Index="1" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Musteri_ListView" ImageName="Customers">
+      <Columns>
+        <ColumnInfo Id="Oid" Width="60" />
+        <ColumnInfo Id="MusteriAd" Index="0" Width="97" />
+        <ColumnInfo Id="Adres" Width="119" Index="1" />
+        <ColumnInfo Id="VergiDairesi" Width="132" Index="2" />
+        <ColumnInfo Id="VergiKimlikNo" Width="84" Index="3" />
+        <ColumnInfo Id="Il" Width="84" Index="4" />
+        <ColumnInfo Id="Ilce" Width="84" Index="5" />
+        <ColumnInfo Id="TelefonNumarasi" Width="84" Index="6" />
+        <ColumnInfo Id="EPosta" Width="84" Index="7" />
+      </Columns>
+    </ListView>
+    <ListView Id="Musteri_LookupListView" ImageName="BO_Country_v92" />
+    <DetailView Id="Satici_DetailView" ImageName="BO_Sale">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Satici" RelativeSize="50.335570469798661" Direction="Vertical">
+              <LayoutGroup Id="Satici_col1" RelativeSize="100">
+                <LayoutItem Id="FirmaAd" ViewItem="FirmaAd" Index="0" RelativeSize="26.5625" SizeConstraintsType="Default" MinSize="138, 68" IsNewNode="True" />
+                <LayoutItem Id="Adres" RelativeSize="10.15625" Index="1" />
+                <LayoutGroup Id="Autoa90fc700-6b68-44c8-83c6-e6b841bb775c" ShowCaption="False" Caption="Autoa90fc700-6b68-44c8-83c6-e6b841bb775c(7)" Direction="Horizontal" Index="2" RelativeSize="13.671875" IsNewNode="True">
+                  <LayoutItem Id="Il" ViewItem="Il" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="Ilce" ViewItem="Ilce" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Il" RelativeSize="8.387096774193548" Index="2" Removed="True" />
+                <LayoutGroup Id="Auto7d65f9e3-d072-4639-b329-d1da8251119b" ShowCaption="False" Caption="Auto7d65f9e3-d072-4639-b329-d1da8251119b(10)" Index="3" RelativeSize="36.328125" IsNewNode="True">
+                  <LayoutItem Id="TelefonNumarasi" ViewItem="TelefonNumarasi" Index="0" RelativeSize="31.182795698924732" IsNewNode="True" />
+                  <LayoutGroup Id="Auto363ebda0-5724-470d-a037-db6b77fffeab" ShowCaption="False" Caption="Auto363ebda0-5724-470d-a037-db6b77fffeab(12)" Direction="Horizontal" Index="1" RelativeSize="68.817204301075265" IsNewNode="True">
+                    <LayoutGroup Id="Auto472886b0-3492-4253-944d-8af035c2b17b" ShowCaption="False" Caption="Auto472886b0-3492-4253-944d-8af035c2b17b(13)" Index="0" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="WebSitesi" ViewItem="WebSitesi" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="VergiDairesi" ViewItem="VergiDairesi" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto9205a7aa-d8a6-4cdc-95fa-e91b298ed886" ShowCaption="False" Caption="Auto9205a7aa-d8a6-4cdc-95fa-e91b298ed886(16)" Index="1" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="EPosta" ViewItem="EPosta" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="VergiKimlikNo" ViewItem="VergiKimlikNo" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="TicaretSicilNo" ViewItem="TicaretSicilNo" Index="4" RelativeSize="13.28125" IsNewNode="True" />
+                <LayoutItem Id="VergiDairesi" RelativeSize="10.077519379844961" Index="4" Removed="True" />
+                <LayoutItem Id="Ilce" RelativeSize="8.387096774193548" Index="5" Removed="True" />
+                <LayoutItem Id="VergiKimlikNo" RelativeSize="10.077519379844961" Index="5" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Satici_col2" RelativeSize="50" Caption="Satici_col2" Removed="True">
+                <LayoutItem Id="EPosta" Index="0" RelativeSize="17.171717171717173" Removed="True" />
+                <LayoutItem Id="TelefonNumarasi" Index="0" RelativeSize="19.767441860465116" Removed="True" />
+                <LayoutItem Id="TicaretSicilNo" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="WebSitesi" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="49.664429530201339" Caption="Oid">
+              <LayoutItem Id="Oid" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="31.543624161073826" Caption="Firma Adı" Removed="True">
+            <LayoutItem Id="FirmaAd" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Satici_ListView" ImageName="BO_Sale">
+      <Columns>
+        <ColumnInfo Id="Oid" Width="60" />
+        <ColumnInfo Id="FirmaAd" Width="84" Index="0" />
+        <ColumnInfo Id="Adres" Width="84" Index="1" />
+        <ColumnInfo Id="Il" Width="45" Index="2" />
+        <ColumnInfo Id="Ilce" Width="54" Index="3" />
+        <ColumnInfo Id="TelefonNumarasi" Width="84" Index="4" />
+        <ColumnInfo Id="WebSitesi" Width="84" Index="5" />
+        <ColumnInfo Id="EPosta" Width="84" Index="6" />
+        <ColumnInfo Id="VergiDairesi" Width="95" Index="7" />
+        <ColumnInfo Id="VergiKimlikNo" Width="84" Index="8" />
+        <ColumnInfo Id="TicaretSicilNo" Width="106" Index="9" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Urunler_DetailView" ImageName="NewProduct">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Urunler" RelativeSize="18.511066398390341" Direction="Vertical">
+              <LayoutItem Id="MalHizmetKodu" RelativeSize="36.956521739130437" />
+              <LayoutItem Id="MalHizmetAdi" RelativeSize="28.260869565217391" />
+              <LayoutItem Id="Aciklama" RelativeSize="34.782608695652172" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="81.488933601609659" Index="1">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Urunler_ListView" FilterEnabled="True" Filter="" ImageName="NewProduct">
+      <Columns>
+        <ColumnInfo Id="Oid" Width="60" />
+        <ColumnInfo Id="MalHizmetAdi" Width="131" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="SiraNo" Width="74" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="MalHizmetKodu" Width="268" />
+        <ColumnInfo Id="Aciklama" Width="726" />
+      </Columns>
+    </ListView>
+    <ListView Id="Urunler_LookupListView" ImageName="NewProduct">
+      <Columns>
+        <ColumnInfo Id="SiraNo" PropertyName="SiraNo" Index="0" Width="124" IsNewNode="True" />
+        <ColumnInfo Id="MalHizmetKodu" PropertyName="MalHizmetKodu" Index="1" Width="233" IsNewNode="True" />
+        <ColumnInfo Id="MalHizmetAdi" Index="2" Width="233" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
